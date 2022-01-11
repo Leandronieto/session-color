@@ -1,0 +1,33 @@
+body {
+  font-size: 20px;
+}
+
+.Rojo {
+  background-color: red;
+}
+
+.Verde {
+  background-color: green;
+}
+
+.Azul {
+  background-color: blue;
+}
+
+.Amarillo {
+  background-color: yellow;
+}
+
+
+
+.box {
+  width: 450px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+  text-align: center;
+  padding: 5px;
+}
+
+.box div {
+  margin: 5px;
+}

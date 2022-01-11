@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body style = "background-color: <%= locals.color ? locals.color : null%>;">
+    
+    <% if (locals.nombre) { %>
+   
+ 
+      <h1>prueba</h1>
+      
+        <% } else { %> 
+         
+           
+              <div>
+                <div class="box">
+          
+                <form action="/" method="POST">
+            
+                  <div>
+                    <h3>Bienvenido a pagina color</h3>
+                  </div>
+                
+                <div>
+                  <label for="name">Ingrese su nombre <input type="text" name="name"></label>
+                </div>
+               
+                <div>
+                  <label for="">Seleccione un color <select name="color" id="">
+                    <option name="color" value="white">Seleccione color</option>
+                    <option name="color" value="red">Rojo</option>
+                    <option name="color" value="green">Verde</option>
+                    <option name="color" value="blue">Azul</option>
+                    <option name="color" value="yellow">Amarillo</option>
+                  </select>
+                  </label>
+                </div>
+              
+                <div>
+                  <label for="email">Ingrese su email <input type="email" name="email"></label>
+                </div>
+               
+                <div>
+                  <label for="edad">Ingrese su edad <input type="text" name="edad"></label>
+                </div>
+               
+               <div>
+                <label for=""><input type="checkbox" name="recordar" > Recordar color</label>
+               </div>
+               
+                <div>
+                  <label for=""><button  type="submit">INGRESAR</button></label>
+                  
+                </div>
+             
+                
+                
+                </form>
+                <form action="/?_delete" method="POST">
+                  <label for=""><button type="reset">OLVIDAR COLOR</button></label>
+                </form>
+            
+              </div>
+            </div>
+            
+           
+           
+        
+          <% } %>
+
+
+
+  </body>
+
+
+  
+</html>
